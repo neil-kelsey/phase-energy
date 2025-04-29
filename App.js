@@ -3,6 +3,7 @@ import { Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import DocumentationScreen from './DocumentationScreen';
+import SupabaseTest from './components/SupabaseTest';
 
 function HomeScreen() {
   return (
@@ -32,6 +33,10 @@ export default function App() {
         <Tab.Screen 
           name="Documentation" 
           component={DocumentationScreen}
+        />
+        <Tab.Screen 
+          name="Supabase Test" 
+          component={SupabaseTest}
         />
       </Tab.Navigator>
     </NavigationContainer>

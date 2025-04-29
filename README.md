@@ -4,12 +4,35 @@ A React Native mobile application for Phase Energy, providing features for solar
 
 ## Tech Stack
 
-- **React Native** with Expo (SDK 49)
-- **NativeWind** (v2.0.11) for styling (Tailwind CSS for React Native)
-- **React Navigation** for routing and navigation
+- **Frontend**
+
+- React Native with Expo (SDK 49)
+- NativeWind (v2.0.11) for styling (Tailwind CSS for React Native)
+- React Navigation for routing and navigation
   - Bottom Tab Navigator
   - Native Stack Navigator
-- **TypeScript** for type safety
+- TypeScript for type safety
+
+**Authentication**
+
+- Supabase Auth
+
+- **Backend Admin Panel**
+
+  - Supabase Studio
+    - Easily create users and upload files
+    - Restrict access via roles (important for future scalability)
+
+- **Hosting**
+
+  - Supabase hosting (start with free tier, then $25/month)
+
+- **Testing**
+
+  - TestFlight and Google Play internal testing before full release
+
+- **Backup**
+  - Supabase has built-in support on paid plans
 
 ## Project Structure
 
@@ -26,11 +49,13 @@ Phase/
 ## Setup Instructions
 
 1. **Prerequisites**
+
    - Node.js (LTS version recommended)
    - npm or yarn
    - Expo Go app on your mobile device
 
 2. **Installation**
+
    ```bash
    # Clone the repository
    git clone [your-repo-url]
@@ -41,6 +66,7 @@ Phase/
    ```
 
 3. **Running the App**
+
    ```bash
    # Start the development server
    npx expo start --clear
@@ -91,13 +117,15 @@ Main dependencies and their versions:
 Common issues and solutions:
 
 1. **Metro bundler issues**
+
    - Solution: Stop the server and restart with `npx expo start --clear`
 
 2. **NativeWind styles not applying**
+
    - Check babel.config.js includes the NativeWind plugin
    - Verify tailwind.config.js content paths are correct
    - Restart the development server
 
 3. **Navigation issues**
    - Ensure all navigation packages are properly installed
-   - Check for version compatibility with Expo SDK 
+   - Check for version compatibility with Expo SDK
