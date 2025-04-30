@@ -112,6 +112,17 @@ Main dependencies and their versions:
 3. Keep the navigation structure simple and intuitive
 4. Follow the established project structure for new features
 
+## TODO Before Production
+
+1. **Supabase Security**
+   - Enable Row Level Security (RLS) on all tables
+   - Set up proper RLS policies for:
+     - Anonymous read access to public data (test-messages, etc.)
+     - Authenticated user access to private data
+     - Admin access where needed
+   - Review and test all security policies
+   - Remove any test data from tables
+
 ## Troubleshooting
 
 Common issues and solutions:
